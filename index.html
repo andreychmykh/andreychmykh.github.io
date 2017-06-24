@@ -8,7 +8,8 @@
 <title>Andrey Chmykh</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="achmykh, andreychmykh, CMU, Andrey, Chmykh, Personal, Website">
+<meta name="keywords"
+	content="achmykh, andreychmykh, CMU, Andrey, Chmykh, Personal, Website">
 <meta name="description" content="Andrey Chmykh's personal website">
 <meta name="author" content="Andrey Chmykh">
 
@@ -514,9 +515,9 @@
 						<h4>Booth 2016</h4>
 						<p>Booth is one of the biggest showpieces of Spring Carnival.
 							Student organizations build multi-story structures around our
-							chosen theme, Game Night. These booths include interactive games
-							and elaborate decorations. During the Spring of 2016, I helped
-							build Luigi's Mansion, which placed first.</p>
+							chosen theme. These booths include interactive games and
+							elaborate decorations.In 2016, I helped build Luigi's Mansion,
+							which placed first.</p>
 					</div>
 				</div>
 
@@ -524,8 +525,7 @@
 					<img src="img/booth2017.jpg" alt="Booth 2017">
 					<div class="carousel-caption">
 						<h4>Booth 2017</h4>
-						<p>During the Spring of 2017, we placed second (by 0.4 points)
-							with Atlantis.</p>
+						<p>During the Spring of 2017, we placed second with Atlantis.</p>
 					</div>
 				</div>
 
@@ -547,8 +547,7 @@
 						<p>I used to run long distance competitively in high school,
 							and I ended up running 5th best from our state during the New
 							England Invitational. Currently, I'm only running as a hobby, and
-							trying to train for a marathon. I hope to someday accomplish both
-							running a marathon and racing a triathalon.</p>
+							trying to train for a marathon.</p>
 					</div>
 				</div>
 
@@ -556,7 +555,7 @@
 					<img src="img/skiing.jpg" alt="Skiing">
 					<div class="carousel-caption">
 						<h4>Skiing</h4>
-						<p>I ski on both Nordic and Alpine skis. It's always a ggod
+						<p>I ski on both Nordic and Alpine skis. It's always a good
 							winter day when I can step on some skis.</p>
 					</div>
 				</div>
@@ -637,32 +636,31 @@
 						action="https://formspree.io/achmykh@andrew.cmu.edu"
 						name="contactform" id="contactform">
 						<div class="form-group">
-							<label for="name" class="control-label" style="color: inherit"><input
-								type="text" class="form-control" id="inputName"
+							<label for="name" class="control-label"><input
+								name="name" id="name" type="text" class="form-control"
 								placeholder="Enter name here" required></label>
 						</div>
 						<div class="form-group">
 							<label for="email" class="control-label"><input
-								type="email" class="form-control" id="inputEmail"
+								name="email" id="email" type="email" class="form-control"
 								placeholder="Email" data-error="That email address is invalid"
-								required
-								pattern="([\w\-\.]+)@(([\w]+)\.)([a-zA-Z]{2,4})(\.[a-zA-Z]{2,4})?"></label>
+								pattern="([\w\-\.]+)@(([\w]+)\.)([a-zA-Z]{2,4})(\.[a-zA-Z]{2,4})?"
+								required></label>
 							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="phone" class="control-label"><input
-								type="text"
-								pattern="[1]?[-.]?[(]?[0-9]{3}[)]?[-.]?[0-9]{3}[-.]?[0-9]{4}"
-								class="form-control" id="inputEmail" placeholder="Phone"
-								data-error="That phone number is invalid"></label>
+								name="phone" id="phone" type="text" class="form-control"
+								placeholder="Phone" data-error="That phone number is invalid"
+								pattern="[1]?[-.]?[(]?[0-9]{3}[)]?[-.]?[0-9]{3}[-.]?[0-9]{4}"></label>
 							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
-							<label for="comments" class="control-label"><textarea
-									class="form-control" id="inputMessage" rows="4"
-									placeholder="Input message here" required></textarea></label>
+							<label for="message" class="control-label"><textarea
+									name="message" id="message" class="form-control"
+									placeholder="Input message here" rows="4" required></textarea></label>
 						</div>
-						<button type="submit">Send</button>
+						<input type="button" value="Send" onclick="submitForm()">
 					</form>
 				</div>
 			</div>
