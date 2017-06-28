@@ -10,6 +10,8 @@ body {
 	background-repeat: no-repeat;
 	background-size: contain;
 	
+	/*font*/
+	font-family: 'Oswald', sans-serif;
 }
 
 #top .jumbotron {
@@ -112,6 +114,7 @@ section#top .jumbotron{
 
 img.img-responsive {
 	margin-bottom: 3em;
+	max-width: 627px;
 }
 
 @media (min-height: 911px) {
