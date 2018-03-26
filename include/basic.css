@@ -35,8 +35,9 @@ a {
 	color: inherit;
 }
 
-a:active { 
-    color: inherit;
+a:-webkit-any-link { 
+	text-decoration: none;
+    	color: inherit;
 }
 
 /* Lists */
